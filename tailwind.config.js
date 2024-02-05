@@ -11,8 +11,7 @@ export default {
 				xs: '475px',
 			},
 			fontFamily: {
-				gsl: ['GeosansLight', 'sans-serif'],
-				als: ['"Alumni Sans"', 'sans-serif'],
+				sdg: ['SF Distant Galaxy', 'sans-serif'],
 			},
 			colors: {
 				c1: '', // 60%
