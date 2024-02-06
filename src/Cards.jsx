@@ -22,7 +22,7 @@ function Cards() {
 					}}>
 					<img
 						className='h-60 w-48 object-cover'
-						src={`./dist/assets/${card}.jpg`}></img>
+						src={`./src/assets/${card}.jpg`}></img>
 				</button>
 			)
 		})
