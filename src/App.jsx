@@ -51,7 +51,7 @@ function App() {
 
 	//TODO: add attribution for card images
 	return (
-		<div className='h-screen w-screen bg-[url(./dist/assets/bg.jpg)] bg-cover p-4 pb-0 font-sdg text-white'>
+		<div className='h-screen w-screen bg-cover p-4 pb-0 font-sdg text-white bg'>
 			<header className='grid h-20 place-items-center rounded-2xl border-2 text-center text-6xl tracking-widest'>
 				Memory Game
 			</header>
