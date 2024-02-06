@@ -4,8 +4,7 @@ import { useCallback, useContext } from 'react'
 import { CardContext } from './App'
 
 function Cards() {
-	const { max, cards, guesses, setMode, setGuesses } =
-		useContext(CardContext)
+	const { max, cards, guesses, setMode, setGuesses } = useContext(CardContext)
 
 	//DESC: Durstenfeld shuffle algorithm
 	const round = useCallback(() => {
@@ -17,11 +16,13 @@ function Cards() {
 		return cards.slice(0, 3).map(card => {
 			return (
 				<button
-					className='rounded-2xl border-[1px] border-white overflow-hidden'
+					className='mx-2 overflow-hidden rounded-2xl border-[1px] border-white'
 					onClick={() => {
 						setGuesses([...guesses, card])
 					}}>
-					<img className='h-60 w-48 object-cover' src={`./src/assets/${card}.jpg`}></img>
+					<img
+						className='h-60 w-48 object-cover'
+						src={`./src/assets/${card}.jpg`}></img>
 				</button>
 			)
 		})
@@ -29,8 +30,7 @@ function Cards() {
 
 	return (
 		<>
-			<section className='flex gap-4'>
-				<div>
+			<section className='flex gap-4 pb-12'>
 					<input
 						type='radio'
 						name='mode'
@@ -38,37 +38,36 @@ function Cards() {
 						value='easy'
 						defaultChecked
 						onClick={() => setMode('easy')}></input>
-					<label htmlFor='easy' className='ml-[.4rem]'>
+					<label
+						htmlFor='easy'
+						className='cursor-pointer rounded-2xl border py-1 pl-4 pr-3'>
 						Easy
 					</label>
-				</div>
-				<div>
 					<input
 						type='radio'
 						name='mode'
 						id='normal'
 						value='normal'
 						onClick={() => setMode('normal')}></input>
-					<label htmlFor='normal' className='ml-[.4rem]'>
+					<label
+						htmlFor='normal'
+						className='cursor-pointer rounded-2xl border py-1 pl-4 pr-3'>
 						Normal
 					</label>
-				</div>
-				<div>
 					<input
 						type='radio'
 						name='mode'
 						id='hard'
 						value='hard'
 						onClick={() => setMode('hard')}></input>
-					<label htmlFor='hard' className='ml-[.4rem]'>
+					<label
+						htmlFor='hard'
+						className='cursor-pointer rounded-2xl border py-1 pl-4 pr-3'>
 						Hard
 					</label>
-				</div>
 			</section>
 			<section>{round()}</section>
-			<p>
-				Round: {guesses.length} / {max.current}
-			</p>
+			<p className='py-4 text-5xl'>Round {guesses.length + 1}</p>
 		</>
 	)
 }

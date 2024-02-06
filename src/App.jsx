@@ -37,8 +37,6 @@ function App() {
 	}, [mode])
 
 	useEffect(() => {
-		console.log(guesses)
-
 		if (new Set(guesses).size != guesses.length) {
 			alert('You lost')
 			reset(1)
@@ -53,12 +51,14 @@ function App() {
 
 	//TODO: add attribution for card images
 	return (
-		<div className='bg-[url(./src/assets/bg.jpg)] bg-cover p-4 pb-0 font-sdg text-white'>
-			<header className='grid h-20 place-items-center text-6xl tracking-widest border-2 rounded-2xl '>
+		<div className='h-screen w-screen bg-[url(./src/assets/bg.jpg)] bg-cover p-4 pb-0 font-sdg text-white'>
+			<header className='grid h-20 place-items-center rounded-2xl border-2 text-center text-6xl tracking-widest'>
 				Memory Game
 			</header>
-			<p className='text-xl text-center tracking-widest'>High score: {highScore}</p>
-			<main className='flex h-[calc(100vh-7.8rem)] w-[calc(100vw-2rem)] flex-col items-center justify-center text-xl tracking-widest px-8'>
+			<p className='py-4 text-center text-xl tracking-widest'>
+				High score: {highScore}
+			</p>
+			<main className='flex flex-col items-center justify-center px-8 text-xl tracking-widest'>
 				<CardContext.Provider
 					value={{ highScore, max, cards, guesses, setMode, setGuesses }}>
 					<Cards />
