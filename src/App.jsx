@@ -51,7 +51,7 @@ function App() {
 
 	//TODO: add attribution for card images
 	return (
-		<div className='h-screen w-screen bg-[url(./src/assets/bg.jpg)] bg-cover p-4 pb-0 font-sdg text-white'>
+		<div className='h-screen w-screen bg-[url(./dist/assets/bg.jpg)] bg-cover p-4 pb-0 font-sdg text-white'>
 			<header className='grid h-20 place-items-center rounded-2xl border-2 text-center text-6xl tracking-widest'>
 				Memory Game
 			</header>
@@ -64,6 +64,33 @@ function App() {
 					<Cards />
 				</CardContext.Provider>
 			</main>
+			<div className='absolute bottom-2 tracking-widest'>
+				<p>
+					Background image sourced from{' '}
+					<a
+						href='https://www.wallpaperflare.com'
+						target='_blank'
+						className='duration-300 hover:text-[red] hover:underline'>
+						wallpaperflare.com
+					</a>
+				</p>
+				<p>
+					Card images by{' '}
+					<a
+						className='duration-300 hover:text-[red] hover:underline'
+						href='https://pinterest.com/dereklaufman/'
+						target='_blank'>
+						Derek Laufman
+					</a>
+					, sourced from{' '}
+					<a
+						className='duration-300 hover:text-[red] hover:underline'
+						href='https://pinterest.com'
+						target='_blank'>
+						pinterest.com
+					</a>
+				</p>
+			</div>
 		</div>
 	)
 }
