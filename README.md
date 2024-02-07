@@ -1,5 +1,5 @@
 # Memory game project for TOP's React course
-> Live link: [Memory game](top-memory-game-r9e6twal6-veronfcs-projects.vercel.app)  
+> Live link: [Memory game](https://veronfc-top-memory-game.vercel.app/)  
 ---
 > Todo
 > - Add card animations
