@@ -12,3 +12,7 @@ input[type='radio'] {
 input[type='radio']:checked + label {
 	background-color: red;
 }
+
+.bg {
+	background-image: url(./assets/bg.jpg);
+}
