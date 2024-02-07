@@ -2,12 +2,10 @@
 	"name": "top-memory-game",
 	"private": true,
 	"version": "0.0.0",
-	"homepage": "https://veronfc.github.io/TOP-memory-game/",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"deploy": "gh-pages -d dist",
 		"preview": "vite preview",
 		"format": "npx prettier . --write"
 	},
