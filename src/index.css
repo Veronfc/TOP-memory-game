@@ -16,3 +16,63 @@ input[type='radio']:checked + label {
 .bg {
 	background-image: url(./assets/bg.jpg);
 }
+
+.c0 {
+	background-image: url(./assets/0.jpg);
+}
+
+.c1 {
+	background-image: url(./assets/1.jpg);
+}
+
+.c2 {
+	background-image: url(./assets/2.jpg);
+}
+
+.c3 {
+	background-image: url(./assets/3.jpg);
+}
+
+.c4 {
+	background-image: url(./assets/4.jpg);
+}
+
+.c5 {
+	background-image: url(./assets/5.jpg);
+}
+
+.c6 {
+	background-image: url(./assets/6.jpg);
+}
+
+.c7 {
+	background-image: url(./assets/7.jpg);
+}
+
+.c8 {
+	background-image: url(./assets/8.jpg);
+}
+
+.c9 {
+	background-image: url(./assets/9.jpg);
+}
+
+.c10 {
+	background-image: url(./assets/10.jpg);
+}
+
+.c11 {
+	background-image: url(./assets/11.jpg);
+}
+
+.c12 {
+	background-image: url(./assets/12.jpg);
+}
+
+.c13 {
+	background-image: url(./assets/13.jpg);
+}
+
+.c14 {
+	background-image: url(./assets/14.jpg);
+}

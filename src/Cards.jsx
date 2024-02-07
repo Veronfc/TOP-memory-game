@@ -21,8 +21,8 @@ function Cards() {
 						setGuesses([...guesses, card])
 					}}>
 					<img
-						className='h-60 w-48 object-cover'
-						src={`./src/assets/${card}.jpg`}></img>
+						className={`h-60 w-48 bg-cover c${card}`}>
+					</img>
 				</button>
 			)
 		})
